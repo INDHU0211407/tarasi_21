@@ -89,14 +89,54 @@
   <source src="tamilv.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
- <div style="text-align:center; margin-top:20px;">
-    <a href="index.html"
-       style="display:inline-block; padding:12px 20px;
-              background:#ff4b5c; color:white; text-decoration:none;
-              font-size:18px; border-radius:12px;
-              box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-        ⬅ Back to Home
-    </a>
+<div style="text-align:center; margin:40px 0;">
+
+  <a href="tamilar.html" class="next-btn">
+     <span>click to see my thoughts through words➜</span>
+  </a>
+
+</div>
+
+<style>
+.next-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 32px;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#ff4b5c,#ff8c42);
+    box-shadow:0 8px 20px rgba(255,75,92,0.4);
+    transition:all 0.35s ease;
+    animation:float 2s ease-in-out infinite;
+}
+
+.next-btn span{
+    transition:transform 0.35s ease;
+}
+
+.next-btn:hover{
+    transform:translateY(-5px) scale(1.08);
+    box-shadow:0 12px 28px rgba(255,75,92,0.6);
+}
+
+.next-btn:hover span{
+    transform:translateX(8px);
+}
+
+.next-btn:active{
+    transform:scale(0.96);
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-6px);}
+    100%{transform:translateY(0);}
+}
+</style>
 </div>
 
 </body>
