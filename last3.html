@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> MyGentleMan ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("2.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-top: 50px;
+      text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081, 0 0 40px #f50057;
+      animation: glow 2s infinite alternate;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081; }
+      to { text-shadow: 0 0 25px #ff1744, 0 0 50px #f50057; }
+    }
+
+    .message {
+      max-width: 850px;
+      margin: 30px auto;
+      font-size: 22px;
+      line-height: 1.8;
+      background: rgba(0,0,0,0.55);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
+    }
+
+    .music-btn {
+      margin: 20px;
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4081;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .music-btn:hover {
+      background: #f50057;
+      transform: scale(1.05);
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -20px;
+      color: #ff4d6d;
+      font-size: 30px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>❤️ MyGentleMan  ❤️</h1>
+ <audio autoplay loop>
+    <source src="unvizhi.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <div class="message">
+    <p>
+      ஒவ்வொரு விடியலும் உன்னை காணும் ஆசையிலே தொடங்குகிறது… 😁🌅<br><br>
+      என் வாழ்வு முழுவதும் உன்னாலே ஒரு மாயாஜாலம் போல மாறிவிட்டது.😩  
+      இதயத்தின் ஒவ்வொரு துடிப்பும் உன் பெயரையே பாடுகிறது, ஒவ்வொரு சுவாசமும் உன்னை மட்டுமே தேடுகிறது. 💞<br><br>
+      You are my prayer, my wish, my destiny. 😭🫀...
+    </p>
+    <div class="gallery">
+    <a href="tamilar.html">
+  <img src="t4.jpg" alt="Memory 3" style="width:250px; height:200px; border-radius:15px;">
+</a>
+  </div>
+  </div>
+
+  <div class="heart" style="left:10%; animation-delay:0s;">💝</div>
+  <div class="heart" style="left:35%; animation-delay:2s;">💓</div>
+  <div class="heart" style="left:60%; animation-delay:4s;">💗</div>
+  <div class="heart" style="left:85%; animation-delay:1s;">💕</div>
+
+<script>
+  function playMusic() {
+    const music = document.getElementById("bg-music");
+    music.volume = 0.6;
+    music.play();
+  }
+</script>
+</body>
+</html>
