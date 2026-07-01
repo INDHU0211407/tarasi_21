@@ -76,6 +76,54 @@
     <source src="unvizhi.mp3" type="audio/mpeg">
   </audio>
 
+  <div style="text-align:center; margin:40px 0;">
+
+  <a href="nextpage.html" class="next-btn">
+   click to rewind best moment <span>➜</span>
+  </a>
+
+</div>
+
+<style>
+.next-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 32px;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#ff4b5c,#ff8c42);
+    box-shadow:0 8px 20px rgba(255,75,92,0.4);
+    transition:all 0.35s ease;
+    animation:float 2s ease-in-out infinite;
+}
+
+.next-btn span{
+    transition:transform 0.35s ease;
+}
+
+.next-btn:hover{
+    transform:translateY(-5px) scale(1.08);
+    box-shadow:0 12px 28px rgba(255,75,92,0.6);
+}
+
+.next-btn:hover span{
+    transform:translateX(8px);
+}
+
+.next-btn:active{
+    transform:scale(0.96);
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-6px);}
+    100%{transform:translateY(0);}
+}
+</style>
 
   <div class="message">
     <p>
@@ -84,10 +132,7 @@
       இதயத்தின் ஒவ்வொரு துடிப்பும் உன் பெயரையே பாடுகிறது, ஒவ்வொரு சுவாசமும் உன்னை மட்டுமே தேடுகிறது. 💞<br><br>
       You are my prayer, my wish, my destiny. 😭🫀...
     </p>
-    <div class="gallery">
-    <a href="v.html">
-  <img src="t1.jpeg" alt="Memory 3" style="width:250px; height:200px; border-radius:15px;">
-</a>
+   
   </div>
   </div>
 
