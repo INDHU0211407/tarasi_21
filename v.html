@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("2.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Title Glow */
+    h1 {
+      font-size: 55px;
+      margin-top: 60px;
+      text-shadow: 0 0 15px #ff4081, 0 0 30px #ff80ab;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff80ab; }
+      to { text-shadow: 0 0 30px #ff4081, 0 0 50px #ff80ab; }
+    }
+
+    /* Timeline Box */
+    .timeline {
+      margin: 50px auto;
+      padding: 20px;
+      width: 70%;
+      background: rgba(0,0,0,0.5);
+      border-radius: 20px;
+      font-size: 20px;
+      line-height: 2;
+      text-align: left;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    }
+
+    /* Falling Hearts */
+    .heart {
+      position: fixed;
+      top: -10%;
+      color: #ff80ab;
+      font-size: 25px;
+      animation: fall 6s linear infinite;
+    }
+    @keyframes fall {
+      to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Song -->
+  <audio autoplay loop>
+    <source src="neeyum_naanum.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Heading -->
+  <h1>Our 8 Months of Love Journey 💕</h1>
+
+  <div class="gallery">
+<a href="love.html">
+  <img src="3.jpg" alt="Memory 2" style="width:250px; height:200px; border-radius:15px;">
+</a>
+</div>
+  <!-- Falling Hearts Script -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => { heart.remove(); }, 6000);
+    }
+    setInterval(createHeart, 500);
+  </script>
+
+<video width="600" controls autoplay loop muted style="border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.6);">
+  <source src="tamilv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
