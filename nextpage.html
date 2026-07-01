@@ -2,187 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MyGentle Man's day🫀</title>
+  <title>Our Love Journey 💖</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: url("t1.jpg") no-repeat center center fixed;
-      background-size: cover; /* ensures full screen cover */
+      background: url("t1.png") no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Poppins', sans-serif;
       color: #fff;
       text-align: center;
       overflow-x: hidden;
     }
 
-    /* Main Heading */
+    /* Title Glow */
     h1 {
-      font-size: 65px;
+      font-size: 55px;
       margin-top: 60px;
-      color: #fff;
-      text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081, 0 0 40px #f50057;
-      animation: glow 2s infinite alternate;
-      font-family: 'Great Vibes', cursive;
+      text-shadow: 0 0 15px #ff4081, 0 0 30px #ff80ab;
+      animation: glow 2s ease-in-out infinite alternate;
     }
-
     @keyframes glow {
-      from { text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081; }
-      to { text-shadow: 0 0 25px #ff1744, 0 0 50px #f50057; }
+      from { text-shadow: 0 0 10px #ff80ab; }
+      to { text-shadow: 0 0 30px #ff4081, 0 0 50px #ff80ab; }
     }
 
-    /* Love Message */
-    .message {
-      max-width: 800px;
-      margin: 30px auto;
-      font-size: 22px;
-      line-height: 1.8;
-      background: rgba(0,0,0,0.5);
+    /* Timeline Box */
+    .timeline {
+      margin: 50px auto;
       padding: 20px;
-      border-radius: 15px;
-      backdrop-filter: blur(8px);
+      width: 70%;
+      background: rgba(0,0,0,0.5);
+      border-radius: 20px;
+      font-size: 20px;
+      line-height: 2;
+      text-align: left;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
     }
 
-    /* Memories Gallery */
-    .gallery {
-      margin: 40px auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-    .gallery img {
-      width: 250px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.1);
-    }
-
-    /* Floating hearts */
+    /* Falling Hearts */
     .heart {
-      position: absolute;
-      bottom: -20px;
-      color: #ff4d6d;
-      font-size: 30px;
-      animation: floatUp 6s linear infinite;
-      opacity: 0.7;
+      position: fixed;
+      top: -10%;
+      color: #ff80ab;
+      font-size: 25px;
+      animation: fall 6s linear infinite;
     }
-    @keyframes floatUp {
-      0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
-    }
-
-    /* Music Play Button */
-    .music-btn {
-      margin: 20px;
-      padding: 12px 25px;
-      font-size: 18px;
-      border: none;
-      border-radius: 30px;
-      background: #ff4081;
-      color: white;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      transition: 0.3s;
-    }
-    .music-btn:hover {
-      background: #f50057;
-      transform: scale(1.05);
+    @keyframes fall {
+      to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <!-- Heading -->
-  <h1>💖 Happiesttt birthdayyyyy Thangameyyyy 💖</h1>
 
-  <!-- Music Button -->
-  
-  <audio id="bg-music" loop>
+  <!-- Background Song -->
+  <audio autoplay loop>
     <source src="neeyum_naanum.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
   </audio>
 
-  <!-- Love Message -->
-  <div class="message">
-    <p>
-      Hey thangameyyyy 💕,<br><br>
-      haaaaaa??👀 Start with chinna lines of my kinda love 💫<br><br>
-      To the most precious soul in my life,😁💗<br><br>
-      You are not just my love, you are my safest place, my human diary, my reason to smile every single day. 
-      From the very first moment, you’ve been the one who made my heart feel at home.<br><br>
-      On this special day, I just want to wrap the whole universe in my words and gift it to you, 
-      because even the stars would bow down to the glow you carry in my life. 🌌<br>
-      Every day I see you, it feels as fresh as the very first time… from then till now, my love for you only grows deeper.<br><br>
-      You are my calm in chaos, my laughter in silence, my strength in weakness. Every memory with you is like a piece of art, painted with love, care, and endless warmth. 
-      A beautiful soul who makes my world more magical with every heartbeat. 💖<br><br>
-      Happy Birthday, my love, my everything, my forever?! 💕<br>
-      Here’s to more smiles, more memories… 
-    </p>
+  <!-- Heading -->
+  <h1>Our 8 Months of Love Journey 💕</h1>
+
+  <!-- Timeline -->
+  <div class="timeline">
+    <p>🌸 The day we met… I never thought of you as anything more than a friend in the begining 💫</p>
+    <p>💌 You became my best friend, my caretaker,my support ❤️</p>
+    <p>🌙 Through ups and downs, we stood together 🤝</p>
+    <p>✨ one day our normal relationship changed into a beautiful love  💖</p>
+   <p>Now 11 months,countless memories, our best chapters are still waiting to br written</p>
+    <p>💍 Thangameyyyy, flyinggg kiss to youuuu…</p>
   </div>
-
-  <!-- Memories Gallery -->
-  <h2>📸 Our Sweet Memories</h2>
   <div class="gallery">
-    
- 
-  <!-- Clickable Image -->
-<a href="index.html">
-  <img src="t2.jpg" alt="Memory 1" style="width:250px; height:200px; border-radius:15px;">
+<a href="last3.html">
+  <img src="t3.jpg" alt="Memory 2" style="width:250px; height:200px; border-radius:15px;">
 </a>
-
 </div>
-
-  <!-- Floating Hearts -->
-  <div class="heart" style="left:10%; animation-delay:0s;">💗</div>
-  <div class="heart" style="left:30%; animation-delay:2s;">💖</div>
-  <div class="heart" style="left:50%; animation-delay:4s;">💘</div>
-  <div class="heart" style="left:70%; animation-delay:1s;">💕</div>
-  <div class="heart" style="left:90%; animation-delay:3s;">💞</div>
-  <style>
-  /* Smooth fade effect */
-  body {
-    transition: opacity 1s ease;
-  }
-  body.fade-out {
-    opacity: 0;
-  }
-  .gallery a img {
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .gallery a img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #ff80ab;
-  }
- 
-</style>
-
-
-<script>
-  // Add fade-out effect before going to next page
-  document.querySelectorAll('.fade-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault(); // stop instant navigation
-      document.body.classList.add('fade-out'); 
-      setTimeout(() => {
-        window.location = this.href; // go after fade
-      }, 1000); // 1 second fade duration
-    });
-  });
-</script>
-
-
+  <!-- Falling Hearts Script -->
   <script>
-    function playMusic() {
-      const music = document.getElementById("bg-music");
-      music.volume = 0.6; // softer background sound
-      music.play();
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => { heart.remove(); }, 6000);
     }
+    setInterval(createHeart, 500);
   </script>
+
+
+
 </body>
 </html>
+
+
+
